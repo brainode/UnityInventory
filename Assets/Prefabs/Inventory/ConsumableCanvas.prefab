@@ -365,6 +365,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotId: 2
+  slotTypeRequied: 3
 --- !u!114 &114031726218034568
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -594,6 +595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotId: 0
+  slotTypeRequied: 3
 --- !u!114 &114439522454586720
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -666,6 +668,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotId: 3
+  slotTypeRequied: 3
 --- !u!114 &114527982809162590
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -689,6 +692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotId: 1
+  slotTypeRequied: 3
 --- !u!114 &114669914025275812
 MonoBehaviour:
   m_ObjectHideFlags: 1

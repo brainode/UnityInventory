@@ -1045,6 +1045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotId: 7
+  slotTypeRequied: 0
 --- !u!114 &114167871667326358
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1243,6 +1244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotId: 6
+  slotTypeRequied: 0
 --- !u!114 &114306952686127744
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1255,6 +1257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotId: 1
+  slotTypeRequied: 0
   spawnTransform: {fileID: 0}
 --- !u!114 &114322097058659810
 MonoBehaviour:
@@ -1389,6 +1392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotId: 4
+  slotTypeRequied: 0
 --- !u!114 &114464250988097474
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1504,6 +1508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotId: 0
+  slotTypeRequied: 2
   spawnTransform: {fileID: 0}
 --- !u!114 &114542132212281500
 MonoBehaviour:
@@ -1544,6 +1549,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotId: 0
+  slotTypeRequied: 1
   spawnTransform: {fileID: 0}
 --- !u!114 &114551936803791098
 MonoBehaviour:
@@ -1557,6 +1563,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotId: 3
+  slotTypeRequied: 0
 --- !u!114 &114581204357906206
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1688,6 +1695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotId: 1
+  slotTypeRequied: 0
 --- !u!114 &114704769289753428
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1733,6 +1741,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotId: 8
+  slotTypeRequied: 0
 --- !u!114 &114767350064469876
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1929,6 +1938,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotId: 2
+  slotTypeRequied: 0
 --- !u!114 &114891022819996422
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1941,6 +1951,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotId: 0
+  slotTypeRequied: 0
 --- !u!114 &114909069508433584
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1953,6 +1964,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotId: 5
+  slotTypeRequied: 0
 --- !u!114 &114920599600870766
 MonoBehaviour:
   m_ObjectHideFlags: 1

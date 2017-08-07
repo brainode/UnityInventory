@@ -10,7 +10,7 @@ public class ConsumableSlot : Slot
     public override void OnDrop(PointerEventData eventData)
     {
         ItemDragHandle DragItem = eventData.pointerDrag.GetComponent<ItemDragHandle>();
-        if (!DragItem.CurrientSlot.IsSlotEmpty() && DragItem.CurrientSlot.ItemInSlot.eSlotType == Items.eItemSlotType.Consumable)
+        if (!DragItem.CurrientSlot.IsSlotEmpty() && DragItem.CurrientSlot.ItemInSlot.eSlotType == slotTypeRequied)
         {
             GameManager.InstanseGameManager.BackPackInstance.SwapCells(DragItem.CurrientSlot, this);
         }

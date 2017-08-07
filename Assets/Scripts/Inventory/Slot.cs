@@ -10,11 +10,15 @@ public class Slot : MonoBehaviour, IDropHandler
     [SerializeField]
     protected int slotId;
 
+    [SerializeField]
+    protected Items.eItemSlotType slotTypeRequied;
+
     protected Image iconItem;
 
     protected Text itemCountText;
 
     protected Sprite nullItemIcon;
+
 
     public Image IconItem
     {
@@ -63,6 +67,18 @@ public class Slot : MonoBehaviour, IDropHandler
     public bool IsSlotEmpty()
     {
         return ItemCount > 0 ? false : true;
+    }
+
+    public bool IsTypeAccessible(Item itemToPut)
+    {
+        if (itemToPut.eSlotType == slotTypeRequied)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
     public void SwapSlot(Slot toSwap)

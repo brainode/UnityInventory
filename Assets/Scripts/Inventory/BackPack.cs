@@ -27,6 +27,10 @@ public class BackPack : MonoBehaviour//, IDropHandler
 
     public void SwapCells(Slot fromSlot,Slot toSlot)
     {
-        fromSlot.SwapSlot(toSlot);
+        //fromSlot.SwapSlot(toSlot);
+        if (!toSlot.IsSlotEmpty() && fromSlot.IsTypeAccessible(toSlot.ItemInSlot) || toSlot.IsSlotEmpty())
+        {
+            fromSlot.SwapSlot(toSlot);
+        }
     }
 }
