@@ -17,7 +17,33 @@ public struct HeroStats
 public class Player : MonoBehaviour
 {
     [SerializeField]
-    private HeroStats Stats;
+    private HeroStats stats;
+
+    [SerializeField]
+    private Transform leftHand;
+
+    [SerializeField]
+    private Transform rightHand;
+
+    [SerializeField]
+    private Transform head;
+
+    public Transform LeftHand
+    {
+        get { return leftHand; }
+    }
+
+    public Transform RightHand
+    {
+        get { return rightHand; }
+    }
+
+    public Transform Head
+    {
+        get { return head; }
+    }
+
+    public 
 
     void Start ()
 	{

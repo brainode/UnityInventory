@@ -7,8 +7,6 @@ public class BackPack : MonoBehaviour//, IDropHandler
 {
     private SlotBackPack[] backPackSlots;
 
-
-
     void Awake()
     {
         backPackSlots = GetComponentsInChildren<SlotBackPack>();
@@ -21,6 +19,7 @@ public class BackPack : MonoBehaviour//, IDropHandler
             if (backPackSlots[slotIter].SlotId!=0 && backPackSlots[slotIter].CanBePlaced(ItemToPut))
             {
                 backPackSlots[slotIter].ItemInSlot = ItemToPut;
+                backPackSlots[slotIter].ItemCount += 1;
                 return true;
             }
         }
@@ -29,6 +28,6 @@ public class BackPack : MonoBehaviour//, IDropHandler
 
     public void SwapCells(Slot fromSlot,Slot toSlot)
     {
-        
+        fromSlot.SwapSlot(toSlot);
     }
 }

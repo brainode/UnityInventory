@@ -28,7 +28,15 @@ public class SlotBackPack : Slot
     #region IDropHandler
     public override void OnDrop(PointerEventData eventData)
     {
-        Debug.Log(SlotId);
+        ItemDragHandle DragItem = eventData.pointerDrag.GetComponent<ItemDragHandle>();
+        if (!DragItem.CurrientSlot.IsSlotEmpty())
+        {
+            if (this.IsSlotEmpty() && DragItem.CurrientSlot.GetType().ToString() != "SlotBackPack")
+            {
+                DragItem.CurrientSlot.ClearSlotPrefab();
+            }
+            GameManager.InstanseGameManager.BackPackInstance.SwapCells(DragItem.CurrientSlot, this);
+        }
     }
     #endregion
 }

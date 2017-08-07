@@ -11,6 +11,8 @@ public class Slot : MonoBehaviour, IDropHandler
 
     protected Image iconItem;
 
+    protected Sprite nullItemIcon;
+
     public Image IconItem
     {
         set { iconItem = value; }
@@ -36,13 +38,55 @@ public class Slot : MonoBehaviour, IDropHandler
         set
         {
             itemInSlot = value;
-            itemCount += 1;
             iconItem.sprite = value.ItemIcon;
         }
     }
 
+
+    #region MonoBehaviour
+    void Awake()
+    {
+        nullItemIcon = Resources.Load("IconNullItem",typeof(Sprite)) as Sprite;
+        itemInSlot = null;
+    }
+    #endregion
     #region IDropHandler
     public virtual void OnDrop(PointerEventData eventData) { }
     #endregion
+
+    public virtual void ClearSlotPrefab() { }
+
+    public bool IsSlotEmpty()
+    {
+        return ItemCount > 0 ? false : true;
+    }
+
+    public void SwapSlot(Slot toSwap)
+    {
+        //TODO.Add case when items stackable and ident.
+        if (toSwap.itemInSlot != null)
+        {
+            Item itemToSwap = toSwap.itemInSlot;
+            int itemToSwapCount = toSwap.itemCount;
+            toSwap.ItemInSlot = itemInSlot;
+            toSwap.ItemCount = itemCount;
+            this.ItemInSlot = itemToSwap;
+            this.ItemCount = itemToSwapCount;
+        }
+        else
+        {
+            toSwap.ItemInSlot = itemInSlot;
+            toSwap.ItemCount = itemCount;
+            this.ClearSlot();
+        }
+        
+    }
+
+    public void ClearSlot()
+    {
+        itemInSlot = null;
+        iconItem.sprite = nullItemIcon;
+        itemCount = 0;
+    }
 
 }

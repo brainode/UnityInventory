@@ -9,11 +9,14 @@ public class ItemDragHandle : MonoBehaviour, IDragHandler,IBeginDragHandler, IEn
     private Transform startParentTransform;
     private int slotId;
 
+    public Slot CurrientSlot { get; set; }
+
     #region MonoBehaviour
     void Awake()
     {
-        slotId = GetComponentInParent<SlotBackPack>().SlotId;
-        GetComponentInParent<SlotBackPack>().IconItem = GetComponent<Image>();
+        CurrientSlot = GetComponentInParent<Slot>();
+        slotId = CurrientSlot.SlotId;
+        CurrientSlot.IconItem = GetComponent<Image>();
     }
     #endregion
 
@@ -22,6 +25,7 @@ public class ItemDragHandle : MonoBehaviour, IDragHandler,IBeginDragHandler, IEn
         get{ return slotId; }
     }
 
+
     #region IBeginDragHandler
     public void OnBeginDrag(PointerEventData eventData)
     {
@@ -29,8 +33,6 @@ public class ItemDragHandle : MonoBehaviour, IDragHandler,IBeginDragHandler, IEn
         transform.SetParent(transform.parent.parent.parent);
         transform.position = eventData.position;
         GetComponent<CanvasGroup>().blocksRaycasts = false;
-
-        Debug.Log("Drag start from:"+SlotId);
     }
     #endregion
 

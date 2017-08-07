@@ -18,10 +18,8 @@ public class Items : ScriptableObject
     }
     public enum eItemSlotType
     {
-        None = 1,
-        Head = 2,
-        Arm = 3,
-        Body = 4,
-        Weapon = 5
+        None = 0,
+        Head = 1,
+        Weapon = 2
     }
 }

@@ -98,6 +98,7 @@
     <Compile Include="Assets\Scripts\Inventory\ArmSlot.cs" />
     <Compile Include="Assets\Scripts\Inventory\BackPack.cs" />
     <Compile Include="Assets\Scripts\Inventory\DropSlot.cs" />
+    <Compile Include="Assets\Scripts\Inventory\HeadSlot.cs" />
     <Compile Include="Assets\Scripts\Inventory\ItemDragHandle.cs" />
     <Compile Include="Assets\Scripts\Inventory\Slot.cs" />
     <Compile Include="Assets\Scripts\Inventory\SlotBackPack.cs" />
