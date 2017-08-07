@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -10,6 +11,8 @@ public class Slot : MonoBehaviour, IDropHandler
     protected int slotId;
 
     protected Image iconItem;
+
+    protected Text itemCountText;
 
     protected Sprite nullItemIcon;
 
@@ -47,6 +50,7 @@ public class Slot : MonoBehaviour, IDropHandler
     void Awake()
     {
         nullItemIcon = Resources.Load("IconNullItem",typeof(Sprite)) as Sprite;
+        itemCountText = GetComponentInChildren<Text>();
         itemInSlot = null;
     }
     #endregion
@@ -87,7 +91,8 @@ public class Slot : MonoBehaviour, IDropHandler
             toSwap.ItemCount = itemCount;
             this.ClearSlot();
         }
-        
+        toSwap.UpdateCountLabel();
+        this.UpdateCountLabel();
     }
 
     public void ClearSlot()
@@ -95,6 +100,29 @@ public class Slot : MonoBehaviour, IDropHandler
         itemInSlot = null;
         iconItem.sprite = nullItemIcon;
         itemCount = 0;
+        UpdateCountLabel();
     }
 
+    public void PutItemAtCell(Item itemToPut)
+    {
+        this.ItemInSlot = itemToPut;
+        this.ItemCount += 1;
+        UpdateCountLabel();
+    }
+
+    private void UpdateCountLabel()
+    {
+        try
+        {
+            if (itemCount > 0 && itemInSlot.bIsStackable)
+            {
+                itemCountText.text = itemCount.ToString();
+            }
+            else
+            {
+                itemCountText.text = "";
+            }
+        }
+        catch (NullReferenceException nExp){}
+    }
 }

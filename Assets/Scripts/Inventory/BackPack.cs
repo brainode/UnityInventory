@@ -16,10 +16,9 @@ public class BackPack : MonoBehaviour//, IDropHandler
     {
         for (int slotIter = 0; slotIter < backPackSlots.Length; slotIter++)
         {
-            if (backPackSlots[slotIter].SlotId!=0 && backPackSlots[slotIter].CanBePlaced(ItemToPut))
+            if (backPackSlots[slotIter].CanBePlaced(ItemToPut))
             {
-                backPackSlots[slotIter].ItemInSlot = ItemToPut;
-                backPackSlots[slotIter].ItemCount += 1;
+                backPackSlots[slotIter].PutItemAtCell(ItemToPut);
                 return true;
             }
         }

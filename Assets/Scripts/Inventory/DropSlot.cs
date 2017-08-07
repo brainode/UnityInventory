@@ -20,7 +20,10 @@ public class DropSlot : Slot
         spawnPosition.z = GameManager.InstanseGameManager.PlayerHero.transform.position.z;
         spawnPosition.y = DragItem.CurrientSlot.ItemInSlot.ItemPrefab.transform.position.y;
 
-        Instantiate(DragItem.CurrientSlot.ItemInSlot.ItemPrefab, spawnPosition + Vector3.forward * FORWARDDROPVECTORMULTIPLIER, DragItem.CurrientSlot.ItemInSlot.ItemPrefab.transform.rotation);
+        for (int instIter = 0; instIter < DragItem.CurrientSlot.ItemCount; instIter++)
+        {
+            Instantiate(DragItem.CurrientSlot.ItemInSlot.ItemPrefab, spawnPosition + Vector3.forward * FORWARDDROPVECTORMULTIPLIER, DragItem.CurrientSlot.ItemInSlot.ItemPrefab.transform.rotation);
+        }
         if (DragItem.CurrientSlot.GetType().ToString() != "SlotBackPack")
         {
             DragItem.CurrientSlot.ClearSlotPrefab();
