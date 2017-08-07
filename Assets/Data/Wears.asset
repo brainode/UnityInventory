@@ -12,15 +12,17 @@ MonoBehaviour:
   m_Name: Wears
   m_EditorClassIdentifier: 
   listWears:
-  - sName: 
-    ItemIcon: {fileID: 0}
-    eRarity: 0
-    eSlotType: 0
+  - sName: HatOfDarkness
+    ItemIcon: {fileID: 21300000, guid: 9cd79fd880175bb4a910e930da7568e8, type: 3}
+    eRarity: 2
+    eSlotType: 1
     bIsStackable: 0
-    ItemPrefab: {fileID: 0}
-  - sName: 
-    ItemIcon: {fileID: 0}
-    eRarity: 0
-    eSlotType: 0
+    ItemPrefab: {fileID: 1273558599796098, guid: 3dedd4092a39a014e88a06bfc7a7983f,
+      type: 2}
+  - sName: HatOfGreenPeace
+    ItemIcon: {fileID: 21300000, guid: de0f8dba2ec0ad94384e95c80f735cb8, type: 3}
+    eRarity: 5
+    eSlotType: 1
     bIsStackable: 0
-    ItemPrefab: {fileID: 0}
+    ItemPrefab: {fileID: 1267199149551420, guid: 759115764bbb5644bbd63c7b32ef1553,
+      type: 2}

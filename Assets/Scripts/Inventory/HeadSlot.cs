@@ -14,7 +14,7 @@ public class HeadSlot : Slot
         if (!DragItem.CurrientSlot.IsSlotEmpty() && DragItem.CurrientSlot.ItemInSlot.eSlotType == Items.eItemSlotType.Head)
         {
             GameManager.InstanseGameManager.BackPackInstance.SwapCells(DragItem.CurrientSlot, this);
-            ClearSlot();
+            ClearSlotPrefab();
             SpawnWear(this.ItemInSlot.ItemPrefab, spawnTransform);
         }
     }

@@ -102,8 +102,10 @@
     <Compile Include="Assets\Scripts\Inventory\ItemDragHandle.cs" />
     <Compile Include="Assets\Scripts\Inventory\Slot.cs" />
     <Compile Include="Assets\Scripts\Inventory\SlotBackPack.cs" />
+    <Compile Include="Assets\Scripts\Items\ConsumableMB.cs" />
     <Compile Include="Assets\Scripts\Items\ItemMB.cs" />
     <Compile Include="Assets\Scripts\Items\WeaponMB.cs" />
+    <Compile Include="Assets\Scripts\Items\WearMB.cs" />
     <Compile Include="Assets\Scripts\Player\Player.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
