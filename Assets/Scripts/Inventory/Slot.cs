@@ -71,14 +71,22 @@ public class Slot : MonoBehaviour, IDropHandler
 
     public bool IsTypeAccessible(Item itemToPut)
     {
-        if (itemToPut.eSlotType == slotTypeRequied)
+        if (slotTypeRequied != Items.eItemSlotType.None)
         {
-            return true;
+            if (itemToPut.eSlotType == slotTypeRequied)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
         else
         {
-            return false;
+            return true;
         }
+        
     }
 
     public void SwapSlot(Slot toSwap)
