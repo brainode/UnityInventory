@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc51b43e8539dc84a97453f67ba56f16, type: 3}
+  m_Name: Weapons
+  m_EditorClassIdentifier: 
+  listWeapon:
+  - sName: Sword1
+    ItemIcon: {fileID: 21300000, guid: ef920d8e7031190459385d1faf530a1f, type: 3}
+    eRarity: 1
+    eSlotType: 3
+    bIsStackable: 0
+    ItemPrefab: {fileID: 1888528312665036, guid: 2307b0ecc3d2c8f409a5b5ca5c7c4727,
+      type: 2}
+    eAttackType: 0
+    fAttackPower: 0
+    fAttackRange: 0
+  - sName: Sword2
+    ItemIcon: {fileID: 21300000, guid: 0854941447d221d41a07e592461cbc86, type: 3}
+    eRarity: 2
+    eSlotType: 3
+    bIsStackable: 0
+    ItemPrefab: {fileID: 1170921734990936, guid: ed7e9e080136fbe488c311cccf69e307,
+      type: 2}
+    eAttackType: 0
+    fAttackPower: 0
+    fAttackRange: 0
+  - sName: Sword3
+    ItemIcon: {fileID: 21300000, guid: a8cc166448bb69a45aabab0484a6f9aa, type: 3}
+    eRarity: 3
+    eSlotType: 3
+    bIsStackable: 0
+    ItemPrefab: {fileID: 1717341594670874, guid: c8d63be291305b041aa187eb1c4d179a,
+      type: 2}
+    eAttackType: 0
+    fAttackPower: 0
+    fAttackRange: 0
+  - sName: Sword4
+    ItemIcon: {fileID: 21300000, guid: dc340ae64f5636a40966fb17ed805e8a, type: 3}
+    eRarity: 4
+    eSlotType: 3
+    bIsStackable: 0
+    ItemPrefab: {fileID: 1768382012998786, guid: 82c3962e29777ed40bd98bb5f49c1672,
+      type: 2}
+    eAttackType: 0
+    fAttackPower: 0
+    fAttackRange: 0
