@@ -66,12 +66,20 @@ public class Slot : MonoBehaviour, IDropHandler
         //TODO.Add case when items stackable and ident.
         if (toSwap.itemInSlot != null)
         {
-            Item itemToSwap = toSwap.itemInSlot;
-            int itemToSwapCount = toSwap.itemCount;
-            toSwap.ItemInSlot = itemInSlot;
-            toSwap.ItemCount = itemCount;
-            this.ItemInSlot = itemToSwap;
-            this.ItemCount = itemToSwapCount;
+            if (toSwap.itemInSlot == this.ItemInSlot)
+            {
+                toSwap.ItemCount += itemCount;
+                this.ClearSlot();
+            }
+            else
+            {
+                Item itemToSwap = toSwap.itemInSlot;
+                int itemToSwapCount = toSwap.itemCount;
+                toSwap.ItemInSlot = itemInSlot;
+                toSwap.ItemCount = itemCount;
+                this.ItemInSlot = itemToSwap;
+                this.ItemCount = itemToSwapCount;
+            }
         }
         else
         {

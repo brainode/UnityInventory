@@ -12,15 +12,17 @@ MonoBehaviour:
   m_Name: Consumables
   m_EditorClassIdentifier: 
   listConsumables:
-  - sName: 
-    ItemIcon: {fileID: 0}
-    eRarity: 0
-    eSlotType: 0
-    bIsStackable: 0
-    ItemPrefab: {fileID: 0}
-  - sName: 
-    ItemIcon: {fileID: 0}
-    eRarity: 0
-    eSlotType: 0
-    bIsStackable: 0
-    ItemPrefab: {fileID: 0}
+  - sName: Potion of Health
+    ItemIcon: {fileID: 21300000, guid: f0e61e53847be5342bc8a95e2d95e461, type: 3}
+    eRarity: 1
+    eSlotType: 3
+    bIsStackable: 1
+    ItemPrefab: {fileID: 1538818169564032, guid: b9b8ab00d4a0e984d91cf6e2b84fdc0a,
+      type: 2}
+  - sName: Potion of Stamina
+    ItemIcon: {fileID: 21300000, guid: 565b7f4a7227f8540899c7a2373e1763, type: 3}
+    eRarity: 1
+    eSlotType: 3
+    bIsStackable: 1
+    ItemPrefab: {fileID: 1914744247688956, guid: c4e916da21a82234da9f3aa0c7802157,
+      type: 2}

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class ItemDragHandle : MonoBehaviour, IDragHandler,IBeginDragHandler, IEndDragHandler//, IDropHandler
+public class ItemDragHandle : MonoBehaviour, IDragHandler,IBeginDragHandler, IEndDragHandler
 {
     private Transform startParentTransform;
     private int slotId;

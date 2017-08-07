@@ -20,6 +20,7 @@ public class Items : ScriptableObject
     {
         None = 0,
         Head = 1,
-        Weapon = 2
+        Weapon = 2,
+        Consumable = 3
     }
 }
