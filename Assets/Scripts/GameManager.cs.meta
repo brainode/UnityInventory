@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0175b481683701545aaca656ec952179
+timeCreated: 1502022523
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - GameWeapons: {fileID: 11400000, guid: b93a0702deaf43040aca558c177b96f6, type: 2}
+  - GameWears: {fileID: 11400000, guid: 2e1d9be3edae5974fb4a994f4742b0dd, type: 2}
+  - GameConsumables: {fileID: 11400000, guid: 172e71816ea91c34baad2d6e02ed362b, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
